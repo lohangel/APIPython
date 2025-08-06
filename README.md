@@ -1,31 +1,6 @@
-📚 API da Biblioteca
-Uma API simples para gerenciar usuários em uma biblioteca online, construída com FastAPI e Supabase .
-
-Permite:
-
-Cadastro
-Conecte-se
-Gerenciamento de perfis de usuários (listar, obter detalhes e atualizar)
-⛳ Desenvolvido como parte de uma aula prática em Super Módulo, com foco em autenticação e CRUD .
-
-🛠️ Funcionalidades
-📝 Cadastro: Crie uma conta com email, senha, nome e função (ex.: membro, administrador).
-🔐 Login: Autentique-se e receba um token JWT.
-👥 CRUD de Usuários:
-Listar todos os perfis
-Obter detalhes de um usuário por ID
-Atualizar nome ou linha
-📄 Documentação automática com Swagger disponível em:http://localhost:8000/docs
-🚀 Tecnologias Utilizadas
-FastAPI – Framework moderno e rápido para construção de APIs
-Supabase – Banco de dados PostgreSQL + autenticação
-Pydantic – Validação de dados
-Python 3.11+
-
-
 /biblioteca-api
 ├── /aplicativo
-│   ├── main.py                  # Ponto de entrada da API
+│   ├── main.py                    # Ponto de entrada da API
 │   ├── /api/v1
 │   │   ├── auth.py              # Rotas de cadastro e login
 │   │   ├── users.py             # Rotas para gerenciar usuários
@@ -39,72 +14,10 @@ Python 3.11+
 ├── README.md                    # Este arquivo
 ├── /imagens
 │   └── Structure.png            # Imagem da estrutura de pastas
-✅ Pré-requisitos
-
-Python 3.11+ Conta no Supabase Git instalado
-
-⚙️ Configuração
-Clone o repositório: git clone https://github.com/seu-usuario/library-api.git cd biblioteca-api
-
-Crie um ambiente virtual: python -m venv venv source venv/bin/activate # Linux/Mac venv\Scripts\activate # Windows
-
-Instale as dependências: pip install -r requisitos.txt
-
-Configure o Supabase: Crie um projeto no Supabase Copie a URL do projeto e a API Key ("anon") em Configurações > API Habilite autenticação por e-mail: Painel > Autenticação > Provedores > E-mail
-
-Crie uma tabela profiles no SQL Editor:
-
-*SQL:
-CREATE TABLE profiles (
-  id UUID PRIMARY KEY REFERENCES auth.users(id),
-  full_name VARCHAR(255),
-  role VARCHAR(50) DEFAULT 'member',
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-*ini
-SUPABASE_URL=https://xyz.supabase.co
-SUPABASE_KEY=sua-chave-anônima
-▶️Como Rodar
-
-Inicie uma API localmente: uvicorn app.main:app --reload Acesse: http://localhost:8000/docs
-
-🔁 Teste as Rotas
-
-🔸 Cadastro
-
-POST /api/v1/auth/inscrição
-Exemplo de payload: { "email": " teste@email.com ", "password": "senha123", "full_name": "Teste", "role": "member" }
-
-🔸 Entrar
-
-POST /api/v1/auth/login
-
-Receba o token JWT
-Use o token no Swagger (ícone de cadeia) para testar as rotas protegidas
-🧪 Notas sobre o Desenvolvimento Durante o processo, enfrentamos e resolvemos:
-
-❌ Configuração incorreta do Supabase (URL/chave)
-
-❌ Problemas com tokens JWT
-
-❌ Erros ao mapear dados para os modelos Pydantic
-
-Tudo foi solucionado com testes, revisão da documentação e uso do Swagger.
-
-A API está estável e pronta para uso! ✅
-
-📈 Próximos Passos
-
-🔄 Rotas para redefinição de senha
-
-🔐 Implementar permissões (ex.: só admins listam usuários)
-
-📚 Gerenciamento de livros
-
-🚀 Projeto em desenvolvimento contínuo, aplicado pelo Super Módulo pela Infinity School! Sinta-se em casa.
 
 
 ![output_Super_modulo_API python_38232793864_8926](https://github.com/user-attachments/assets/c61ea43b-14ee-43ac-ba0a-62b42f833d19)
+
 
 
 
