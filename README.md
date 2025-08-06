@@ -21,6 +21,8 @@ FastAPI – Framework moderno e rápido para construção de APIs
 Supabase – Banco de dados PostgreSQL + autenticação
 Pydantic – Validação de dados
 Python 3.11+
+
+
 🗂️ Estrutura do Projeto
 /biblioteca-api
 ├── /aplicativo
@@ -38,6 +40,8 @@ Python 3.11+
 ├── README.md                    # Este arquivo
 ├── /imagens
 │   └── Structure.png            # Imagem da estrutura de pastas
+
+
 ✅ Pré-requisitos
 
 Python 3.11+ Conta no Supabase Git instalado
@@ -104,4 +108,5 @@ A API está estável e pronta para uso! ✅
 
 
 ![output_Super_modulo_API python_38232793864_8926](https://github.com/user-attachments/assets/c61ea43b-14ee-43ac-ba0a-62b42f833d19)
+
 
