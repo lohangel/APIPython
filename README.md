@@ -101,4 +101,7 @@ A API está estável e pronta para uso! ✅
 📚 Gerenciamento de livros
 
 🚀 Projeto em desenvolvimento contínuo, aplicado pelo Super Módulo pela Infinity School! Sinta-se em casa.
-[curriculoBarbara.pdf](https://github.com/user-attachments/files/21638355/curriculoBarbara.pdf)
+
+
+![output_Super_modulo_API python_38232793864_8926](https://github.com/user-attachments/assets/c61ea43b-14ee-43ac-ba0a-62b42f833d19)
+
