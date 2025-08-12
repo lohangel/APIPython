@@ -163,4 +163,5 @@ A API está estável e pronta para uso! ✅
 
 |       Arquivo         | Imagem Estática                        |
 | --------------------- | -------------------------------------- |
-|       Diploma         |  |
+|       Diploma         | ![Image](https://github.com/user-attachments/assets/88f99139-a53c-4a44-b97a-a6da83a76398) |
+
